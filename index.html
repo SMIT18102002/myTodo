@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taskly - Todo List App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Taskly</h1>
+        <p>Simplify. Organize. Achieve.</p>
+
+        <div class="input-group">
+            <input type="text" id="new-task-input" placeholder="Enter a new task..." maxlength="100">
+            <button id="add-task-btn">Add Task</button>
+        </div>
+        
+        <div class="filter-buttons">
+            <button id="all-tasks-btn" class="secondary">All Tasks</button>
+            <button id="active-tasks-btn">Active</button>
+            <button id="completed-tasks-btn" class="success">Completed</button>
+        </div>
+        
+        <ul class="task-list" id="task-list">
+            <li class="empty-state">No tasks yet. Add a task to get started!</li>
+        </ul>
+        
+        <div class="stats">
+            <span id="total-tasks">0 tasks total</span>
+            <span id="completed-tasks">0 completed</span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
